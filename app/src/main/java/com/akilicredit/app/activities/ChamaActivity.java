@@ -68,6 +68,8 @@ public class ChamaActivity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setView(dialogView)
                 .setPositiveButton("Add", (dialog, which) -> {
+                    if (etName.getText() == null || etPhone.getText() == null || etInflow.getText() == null) return;
+                    
                     String name = etName.getText().toString().trim();
                     String phone = etPhone.getText().toString().trim();
                     String inflowStr = etInflow.getText().toString().trim();
@@ -110,8 +112,8 @@ public class ChamaActivity extends AppCompatActivity {
             
             currentGroup.setGroupFinancialMetrics(groupInflow, groupConsistency, groupFrequency);
             
-            tvStatementStatus.setText("✓ Collective Group History Verified");
-            tvStatementStatus.setTextColor(getResources().getColor(R.color.green_mid));
+            tvStatementStatus.setText(R.string.status_collective_verified);
+            tvStatementStatus.setTextColor(androidx.core.content.ContextCompat.getColor(this, R.color.green_mid));
             updateUI();
         }, 2000);
     }

@@ -13,9 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import com.akilicredit.app.R;
-import com.akilicredit.app.models.Applicant;
 import com.akilicredit.app.services.UserSessionManager;
 import com.google.android.material.appbar.MaterialToolbar;
+
+import java.util.Objects;
 
 /**
  * ResultActivity.java
@@ -126,7 +127,7 @@ public class ResultActivity extends AppCompatActivity {
         tvDecision.setText(dec != null ? dec : "DECLINE");
         tvCreditLimit.setText(formatKsh(limit));
         tvRepayment.setText(repay != null ? repay : "Standard Monthly");
-        if (repay != null && !repay.equals("Standard Monthly Repayment")) {
+        if (repay != null && !Objects.equals(repay, "Standard Monthly Repayment")) {
             tvRepaymentDetail.setVisibility(View.VISIBLE);
         }
 
@@ -219,7 +220,7 @@ public class ResultActivity extends AppCompatActivity {
         TextView tip = new TextView(this);
         tip.setText("• " + text);
         tip.setTextSize(android.util.TypedValue.COMPLEX_UNIT_SP, 12);
-        tip.setTextColor(getResources().getColor(R.color.gray_700));
+        tip.setTextColor(ContextCompat.getColor(this, R.color.gray_700));
         tip.setPadding(0, 4, 0, 4);
         llTips.addView(tip);
     }

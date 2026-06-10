@@ -93,6 +93,7 @@
     <string name="verifying">Verifying statement...</string>
     <string name="checking_duration">Checking transaction period...</string>
     <string name="error_statement_too_short">Statement must cover at least 30 days of transactions.</string>
+    <string name="status_collective_verified">✓ Collective Group History Verified</string>
 
     <string-array name="days_of_week">
         <item>Monday</item>
