@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_chama_loan"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Chama Group Loan"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_welfare_test"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="Test Welfare Alert"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="Profile Settings"
+        app:showAsAction="always" />
+</menu>

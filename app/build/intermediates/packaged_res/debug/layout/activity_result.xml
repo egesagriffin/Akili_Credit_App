@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/green_mid"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Score card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/green_light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="24dp">
+
+                    <!-- Score number -->
+                    <TextView
+                        android:id="@+id/tv_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="300"
+                        android:textSize="64sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green_mid" />
+
+                        <!-- Out of 850 -->
+                        <TextView
+                            android:id="@+id/tv_out_of"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="out of 850"
+                            android:textSize="14sp"
+                            android:textColor="@color/gray_500" />
+
+                        <!-- Verification Status Badge -->
+                        <TextView
+                            android:id="@+id/tv_verification_badge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="UNVERIFIED"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="4dp"
+                            android:background="@drawable/badge_bg"
+                            android:backgroundTint="@color/band_poor" />
+
+                    <!-- Band badge -->
+                    <TextView
+                        android:id="@+id/tv_band"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Excellent"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green_mid"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="8dp"
+                        android:background="@drawable/band_badge_bg" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Decision card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_decision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/colorSurface">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@android:drawable/ic_menu_info_details"
+                        android:tint="@color/green_mid"
+                        android:layout_marginEnd="14dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_decision"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="APPROVED"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/green_mid"
+                            android:letterSpacing="0.05" />
+
+                        <TextView
+                            android:id="@+id/tv_decision_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Strong profile. Approved with standard terms."
+                            android:textSize="12sp"
+                            android:textColor="@color/gray_500" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Metrics row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="14dp">
+
+                <!-- Credit limit -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="1dp"
+                    app:cardBackgroundColor="?attr/colorSurface">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Credit Limit"
+                            android:textSize="11sp"
+                            android:textColor="@color/gray_500" />
+
+                        <TextView
+                            android:id="@+id/tv_credit_limit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="KSh 0"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/green_mid" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Annual rate -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="1dp"
+                    app:cardBackgroundColor="?attr/colorSurface">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Annual Rate"
+                            android:textSize="11sp"
+                            android:textColor="@color/gray_500" />
+
+                        <TextView
+                            android:id="@+id/tv_annual_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="18% p.a."
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/green_mid" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- Risk tier -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="1dp"
+                app:cardBackgroundColor="?attr/colorSurface">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="14dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Risk Tier"
+                        android:textSize="13sp"
+                        android:textColor="@color/gray_500" />
+
+                    <TextView
+                        android:id="@+id/tv_risk_tier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tier 2 — Moderate"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green_mid" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Repayment Model -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="1dp"
+                app:cardBackgroundColor="?attr/colorSurface">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Repayment Model"
+                        android:textSize="11sp"
+                        android:textColor="@color/gray_500" />
+
+                    <TextView
+                        android:id="@+id/tv_repayment_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Standard Monthly"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue_primary" />
+
+                    <TextView
+                        android:id="@+id/tv_repayment_behavior_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Automatic micro-deductions mirroring your habits"
+                        android:textSize="11sp"
+                        android:textColor="@color/gray_500"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Improvement tips -->
+            <TextView
+                android:id="@+id/tv_tips_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How to improve your score"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/tips_bg"
+                android:padding="14dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone" />
+
+            <!-- Recalculate button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_view_profile"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="View My Loan Profile"
+                android:textSize="16sp"
+                android:backgroundTint="@color/green_dark"
+                app:cornerRadius="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Recalculate button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_recalculate"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Recalculate Score"
+                android:textSize="16sp"
+                android:backgroundTint="@color/green_mid"
+                app:cornerRadius="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Sign out -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sign_out"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Sign Out"
+                android:textSize="16sp"
+                android:textColor="@color/gray_500"
+                app:strokeColor="@color/gray_300"
+                app:cornerRadius="12dp"
+                android:layout_marginBottom="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

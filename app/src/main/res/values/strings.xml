@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">Akili Credit</string>
+    <string name="tagline">Smart Credit Scoring for Every Kenyan</string>
+    <string name="sdg_badge">SDG 11 · SDG 6 · UNAI Principle 7</string>
+
+    <!-- Login -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_subtitle">Sign in to your Akili Credit account</string>
+    <string name="email_hint">Email address</string>
+    <string name="password_hint">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create New Account</string>
+    <string name="forgot_password">Forgot password?</string>
+
+    <!-- Register -->
+    <string name="full_name_hint">Full name</string>
+    <string name="phone_hint">M-Pesa phone number</string>
+    <string name="occupation_hint">Occupation</string>
+    <string name="consent_text">Your mobile money data is used only for credit scoring with your consent. We do not share your data without permission.</string>
+
+    <!-- Input -->
+    <string name="input_title">Financial Behaviour</string>
+    <string name="input_subtitle">Enter your M-Pesa and financial data to generate your credit score</string>
+    <string name="generate_score">Generate My Credit Score</string>
+
+    <!-- Result -->
+    <string name="result_title">Your Credit Score</string>
+    <string name="recalculate">Recalculate Score</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="out_of_850">out of 850</string>
+    <string name="credit_limit">Credit Limit</string>
+    <string name="annual_rate">Annual Rate</string>
+    <string name="risk_tier">Risk Tier</string>
+    <string name="how_to_improve">How to improve your score</string>
+
+    <!-- Onboarding Redesign -->
+    <string name="onboarding_title">Let\'s get you started</string>
+    <string name="onboarding_subtitle">Just a few quick questions to build your profile.</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="back">Back</string>
+    <string name="step_format">Step %1$d of %2$d</string>
+
+    <!-- Step 1: Basic Info -->
+    <string name="step_basic_title">Basic Information</string>
+    <string name="id_number_hint">National ID Number</string>
+    <string name="location_hint">Location (e.g. Kawangware, Nairobi)</string>
+    <string name="dob_hint">Date of Birth</string>
+
+    <!-- Step 2: Work & Income -->
+    <string name="step_work_title">Work &amp; Income</string>
+    <string name="work_question">What do you do for work?</string>
+    <string name="income_question">How much do you earn on average?</string>
+    <string name="payment_method_question">How do you usually receive payments?</string>
+    <string name="income_range_1">Below KSh 10,000</string>
+    <string name="income_range_2">KSh 10,000 - 30,000</string>
+    <string name="income_range_3">KSh 30,000 - 50,000</string>
+    <string name="income_range_4">Above KSh 50,000</string>
+
+    <!-- Step 3: Financial Behavior -->
+    <string name="step_behavior_title">Financial Habits</string>
+    <string name="mpesa_freq_question">How often do you use M-Pesa?</string>
+    <string name="bill_habit_question">Do you pay bills (electricity, water) regularly?</string>
+    <string name="savings_habit_question">Do you save money regularly?</string>
+    <string name="loan_status_question">Do you have any active loans?</string>
+
+    <!-- Validation Errors -->
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_phone">Please enter a valid Kenyan phone number</string>
+    <string name="error_invalid_id">Please enter a valid 8-digit ID number</string>
+
+    <!-- Options -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="sometimes">Sometimes</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+
+    <!-- Credit Bands -->
+    <string name="band_excellent">Excellent</string>
+    <string name="band_good">Good</string>
+    <string name="band_growing">Growing</string>
+    <string name="band_needs_activity">Needs More Activity</string>
+
+    <!-- Step 4: Verification -->
+    <string name="step_verify_title">Verify Your Activity</string>
+    <string name="step_verify_subtitle">Upload an M-Pesa statement with at least 1 month of history to get a higher limit.</string>
+    <string name="btn_upload_statement">Upload M-Pesa Statement (PDF)</string>
+    <string name="verification_status">Status: %1$s</string>
+    <string name="status_pending">Pending</string>
+    <string name="status_verified">✓ Verified via M-Pesa Digital Signature</string>
+    <string name="verifying">Verifying statement...</string>
+    <string name="checking_duration">Checking transaction period...</string>
+    <string name="error_statement_too_short">Statement must cover at least 30 days of transactions.</string>
+
+    <string-array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+</resources>

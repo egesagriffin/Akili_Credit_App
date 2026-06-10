@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AkiliCredit.NoActionBar">
+
+        <activity
+            android:name="com.akilicredit.app.activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AkiliCredit.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.akilicredit.app.activities.LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.akilicredit.app.activities.RegisterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.akilicredit.app.activities.InputActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.akilicredit.app.activities.ResultActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.akilicredit.app.activities.OnboardingActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.akilicredit.app.activities.SettingsActivity"
+            android:exported="false"
+            android:label="Settings" />
+
+        <activity
+            android:name="com.akilicredit.app.activities.ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AkiliCredit.NoActionBar" />
+
+        <activity
+            android:name="com.akilicredit.app.activities.WelfareActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AkiliCredit.NoActionBar" />
+
+        <activity
+            android:name="com.akilicredit.app.activities.ChamaActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AkiliCredit.NoActionBar" />
+
+        <activity
+            android:name="com.example.akilicredit.MainActivity"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

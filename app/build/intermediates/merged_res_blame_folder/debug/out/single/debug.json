@@ -1,0 +1,98 @@
+[
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\drawable_tips_bg.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\drawable\\tips_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\drawable_cicrle_green_light.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\drawable\\cicrle_green_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\layout_fragment_step_verification.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\layout\\fragment_step_verification.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\layout_fragment_step_habits.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\layout\\fragment_step_habits.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\layout_activity_onboarding.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\layout\\activity_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\drawable_consent_bg.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\drawable\\consent_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\layout_fragment_step_basic_info.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\layout\\fragment_step_basic_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\drawable_band_badge_bg.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\drawable\\band_badge_bg.xml"
+    },
+    {
+        "merged": "com.akilicredit.app-merged_res-57:/layout_dialog_add_member.xml.flat",
+        "source": "com.akilicredit.app-main-59:/layout/dialog_add_member.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\drawable_band_bandge_bg.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\drawable\\band_bandge_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\layout_fragment_step_work_income.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\layout\\fragment_step_work_income.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\layout_activity_chama.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\layout\\activity_chama.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\layout_activity_input.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\layout\\activity_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\layout_activity_result.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\layout\\activity_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\drawable_circle_green_light.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\drawable\\circle_green_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\drawable_cricle_green_light.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\drawable\\cricle_green_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\layout_activity_welfare.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\layout\\activity_welfare.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\drawable_badge_bg.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\drawable\\badge_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-merged_res-57:\\menu_menu_result.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.akilicredit.app-main-59:\\menu\\menu_result.xml"
+    }
+]

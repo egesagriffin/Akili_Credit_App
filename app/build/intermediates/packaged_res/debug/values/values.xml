@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <color name="band_excellent">#2E7D32</color>
+    <color name="band_excellent_bg">#E8F5E9</color>
+    <color name="band_fair">#E65100</color>
+    <color name="band_fair_bg">#FFF3E0</color>
+    <color name="band_good">#1565C0</color>
+    <color name="band_good_bg">#E3F2FD</color>
+    <color name="band_poor">#C62828</color>
+    <color name="band_poor_bg">#FFEBEE</color>
+    <color name="black">#212121</color>
+    <color name="blue_dark">#0D47A1</color>
+    <color name="blue_primary">#1565C0</color>
+    <color name="gradient_end">#43A047</color>
+    <color name="gradient_start">#1B5E20</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_dark">#616161</color>
+    <color name="green_accent">#43A047</color>
+    <color name="green_dark">#1B5E20</color>
+    <color name="green_light">#E8F5E9</color>
+    <color name="green_mid">#2E7D32</color>
+    <color name="tip_bg">#FFF8E1</color>
+    <color name="tip_border">#FFE082</color>
+    <color name="tip_text">#F57F17</color>
+    <color name="white">#FFFFFF</color>
+    <string name="annual_rate">Annual Rate</string>
+    <string name="app_name">Akili Credit</string>
+    <string name="back">Back</string>
+    <string name="band_excellent">Excellent</string>
+    <string name="band_good">Good</string>
+    <string name="band_growing">Growing</string>
+    <string name="band_needs_activity">Needs More Activity</string>
+    <string name="bill_habit_question">Do you pay bills (electricity, water) regularly?</string>
+    <string name="btn_upload_statement">Upload M-Pesa Statement (PDF)</string>
+    <string name="checking_duration">Checking transaction period...</string>
+    <string name="consent_text">Your mobile money data is used only for credit scoring with your consent. We do not share your data without permission.</string>
+    <string name="create_account">Create New Account</string>
+    <string name="credit_limit">Credit Limit</string>
+    <string name="daily">Daily</string>
+    <string name="dob_hint">Date of Birth</string>
+    <string name="email_hint">Email address</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_id">Please enter a valid 8-digit ID number</string>
+    <string name="error_invalid_phone">Please enter a valid Kenyan phone number</string>
+    <string name="error_statement_too_short">Statement must cover at least 30 days of transactions.</string>
+    <string name="finish">Finish</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="full_name_hint">Full name</string>
+    <string name="generate_score">Generate My Credit Score</string>
+    <string name="how_to_improve">How to improve your score</string>
+    <string name="id_number_hint">National ID Number</string>
+    <string name="income_question">How much do you earn on average?</string>
+    <string name="income_range_1">Below KSh 10,000</string>
+    <string name="income_range_2">KSh 10,000 - 30,000</string>
+    <string name="income_range_3">KSh 30,000 - 50,000</string>
+    <string name="income_range_4">Above KSh 50,000</string>
+    <string name="input_subtitle">Enter your M-Pesa and financial data to generate your credit score</string>
+    <string name="input_title">Financial Behaviour</string>
+    <string name="loan_status_question">Do you have any active loans?</string>
+    <string name="location_hint">Location (e.g. Kawangware, Nairobi)</string>
+    <string name="monthly">Monthly</string>
+    <string name="mpesa_freq_question">How often do you use M-Pesa?</string>
+    <string name="next">Next</string>
+    <string name="no">No</string>
+    <string name="occupation_hint">Occupation</string>
+    <string name="onboarding_subtitle">Just a few quick questions to build your profile.</string>
+    <string name="onboarding_title">Let\'s get you started</string>
+    <string name="out_of_850">out of 850</string>
+    <string name="password_hint">Password</string>
+    <string name="payment_method_question">How do you usually receive payments?</string>
+    <string name="phone_hint">M-Pesa phone number</string>
+    <string name="recalculate">Recalculate Score</string>
+    <string name="result_title">Your Credit Score</string>
+    <string name="risk_tier">Risk Tier</string>
+    <string name="savings_habit_question">Do you save money regularly?</string>
+    <string name="sdg_badge">SDG 11 · SDG 6 · UNAI Principle 7</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_subtitle">Sign in to your Akili Credit account</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sometimes">Sometimes</string>
+    <string name="status_pending">Pending</string>
+    <string name="status_verified">✓ Verified via M-Pesa Digital Signature</string>
+    <string name="step_basic_title">Basic Information</string>
+    <string name="step_behavior_title">Financial Habits</string>
+    <string name="step_format">Step %1$d of %2$d</string>
+    <string name="step_verify_subtitle">Upload an M-Pesa statement with at least 1 month of history to get a higher limit.</string>
+    <string name="step_verify_title">Verify Your Activity</string>
+    <string name="step_work_title">Work &amp; Income</string>
+    <string name="tagline">Smart Credit Scoring for Every Kenyan</string>
+    <string name="verification_status">Status: %1$s</string>
+    <string name="verifying">Verifying statement...</string>
+    <string name="weekly">Weekly</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="work_question">What do you do for work?</string>
+    <string name="yes">Yes</string>
+    <style name="Theme.AkiliCredit" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/green_mid</item>
+        <item name="colorPrimaryVariant">@color/green_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/green_accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/green_dark</item>
+    </style>
+    <style name="Theme.AkiliCredit.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green_mid</item>
+        <item name="colorPrimaryVariant">@color/green_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/green_dark</item>
+    </style>
+    <style name="Theme.AkiliCredit.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/green_dark</item>
+        <item name="android:statusBarColor">@color/green_dark</item>
+        <item name="android:navigationBarColor">@color/green_dark</item>
+    </style>
+    <style name="Widget.AkiliCredit.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/green_mid</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Widget.AkiliCredit.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/green_mid</item>
+        <item name="android:textColor">@color/green_mid</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+    <style name="Widget.AkiliCredit.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/green_mid</item>
+        <item name="hintTextColor">@color/green_mid</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+    </style>
+</resources>

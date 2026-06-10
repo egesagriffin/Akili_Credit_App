@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand colors — SDG 11 green -->
+    <color name="green_dark">#1B5E20</color>
+    <color name="green_mid">#2E7D32</color>
+    <color name="green_light">#E8F5E9</color>
+    <color name="green_accent">#43A047</color>
+
+    <!-- Score band colors -->
+    <color name="band_excellent">#2E7D32</color>
+    <color name="band_good">#1565C0</color>
+    <color name="band_fair">#E65100</color>
+    <color name="band_poor">#C62828</color>
+
+    <!-- Band backgrounds -->
+    <color name="band_excellent_bg">#E8F5E9</color>
+    <color name="band_good_bg">#E3F2FD</color>
+    <color name="band_fair_bg">#FFF3E0</color>
+    <color name="band_poor_bg">#FFEBEE</color>
+
+    <!-- UI neutrals -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#212121</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_dark">#616161</color>
+
+    <!-- New Theme Colors -->
+    <color name="blue_primary">#1565C0</color>
+    <color name="blue_dark">#0D47A1</color>
+
+    <!-- Gradient colors for splash -->
+    <color name="gradient_start">#1B5E20</color>
+    <color name="gradient_end">#43A047</color>
+
+    <!-- Tip box -->
+    <color name="tip_bg">#FFF8E1</color>
+    <color name="tip_border">#FFE082</color>
+    <color name="tip_text">#F57F17</color>
+</resources>

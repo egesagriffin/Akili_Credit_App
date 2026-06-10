@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/green_mid"
+        app:titleTextColor="@color/white" />
+
+    <!-- Info bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/green_light"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center_vertical"
+            android:src="@android:drawable/ic_dialog_info"
+            android:tint="@color/green_mid" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your M-Pesa and financial data to generate your credit score"
+            android:textSize="12sp"
+            android:textColor="@color/gray_700" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Live score preview card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_score_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/green_light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="14dp"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Estimated Score"
+                            android:textSize="12sp"
+                            android:textColor="@color/gray_500" />
+
+                        <TextView
+                            android:id="@+id/tv_live_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="300 / 850"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/green_mid" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_live_band"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Poor"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green_mid"
+                        android:paddingHorizontal="14dp"
+                        android:paddingVertical="6dp"
+                        android:background="@drawable/band_badge_bg" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- SeekBars (actual functional sliders) -->
+            <!-- Months active -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Months using M-Pesa" android:textSize="14sp" android:textStyle="bold" android:textColor="?android:attr/textColorPrimary" android:layout_marginTop="8dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="12dp">
+                <SeekBar android:id="@+id/sb_months_active" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:progressTint="@color/green_mid" android:thumbTint="@color/green_mid" />
+                <TextView android:id="@+id/tv_months_val" android:layout_width="64dp" android:layout_height="wrap_content" android:text="12 months" android:textSize="12sp" android:textColor="@color/green_mid" android:textStyle="bold" android:gravity="end" android:paddingStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Transactions per month -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Transactions per month" android:textSize="14sp" android:textStyle="bold" android:textColor="?android:attr/textColorPrimary"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="12dp">
+                <SeekBar android:id="@+id/sb_txn_per_month" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:progressTint="@color/band_good" android:thumbTint="@color/band_good" />
+                <TextView android:id="@+id/tv_txn_val" android:layout_width="64dp" android:layout_height="wrap_content" android:text="20 txns" android:textSize="12sp" android:textColor="@color/band_good" android:textStyle="bold" android:gravity="end" android:paddingStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Average inflow -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Average monthly inflow (KSh)" android:textSize="14sp" android:textStyle="bold" android:textColor="?android:attr/textColorPrimary"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="12dp">
+                <SeekBar android:id="@+id/sb_avg_inflow" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:progressTint="@color/green_dark" android:thumbTint="@color/green_dark" />
+                <TextView android:id="@+id/tv_inflow_val" android:layout_width="72dp" android:layout_height="wrap_content" android:text="KSh 30000" android:textSize="12sp" android:textColor="@color/green_dark" android:textStyle="bold" android:gravity="end" android:paddingStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Inflow consistency -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Income consistency (%)" android:textSize="14sp" android:textStyle="bold" android:textColor="?android:attr/textColorPrimary"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="12dp">
+                <SeekBar android:id="@+id/sb_inflow_consistency" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:progressTint="#6A1B9A" android:thumbTint="#6A1B9A" />
+                <TextView android:id="@+id/tv_consist_val" android:layout_width="48dp" android:layout_height="wrap_content" android:text="60%" android:textSize="12sp" android:textColor="#6A1B9A" android:textStyle="bold" android:gravity="end" android:paddingStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Savings ratio -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Savings ratio (%)" android:textSize="14sp" android:textStyle="bold" android:textColor="?android:attr/textColorPrimary"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="12dp">
+                <SeekBar android:id="@+id/sb_savings_ratio" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:progressTint="@color/green_accent" android:thumbTint="@color/green_accent" />
+                <TextView android:id="@+id/tv_savings_val" android:layout_width="48dp" android:layout_height="wrap_content" android:text="10%" android:textSize="12sp" android:textColor="@color/green_accent" android:textStyle="bold" android:gravity="end" android:paddingStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Bill payment rate -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bill payment rate (%)" android:textSize="14sp" android:textStyle="bold" android:textColor="?android:attr/textColorPrimary"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="12dp">
+                <SeekBar android:id="@+id/sb_bill_payment" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:progressTint="@color/band_fair" android:thumbTint="@color/band_fair" />
+                <TextView android:id="@+id/tv_bills_val" android:layout_width="48dp" android:layout_height="wrap_content" android:text="70%" android:textSize="12sp" android:textColor="@color/band_fair" android:textStyle="bold" android:gravity="end" android:paddingStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Chama months -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chama / SACCO months" android:textSize="14sp" android:textStyle="bold" android:textColor="?android:attr/textColorPrimary"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="12dp">
+                <SeekBar android:id="@+id/sb_chama_months" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:progressTint="#4527A0" android:thumbTint="#4527A0" />
+                <TextView android:id="@+id/tv_chama_val" android:layout_width="72dp" android:layout_height="wrap_content" android:text="6 months" android:textSize="12sp" android:textColor="#4527A0" android:textStyle="bold" android:gravity="end" android:paddingStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Airtime regularity -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Airtime regularity (%)" android:textSize="14sp" android:textStyle="bold" android:textColor="?android:attr/textColorPrimary"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="20dp">
+                <SeekBar android:id="@+id/sb_airtime_regularity" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:progressTint="#AD1457" android:thumbTint="#AD1457" />
+                <TextView android:id="@+id/tv_airtime_val" android:layout_width="48dp" android:layout_height="wrap_content" android:text="75%" android:textSize="12sp" android:textColor="#AD1457" android:textStyle="bold" android:gravity="end" android:paddingStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Repayment behavior -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repayment Preferences"
+                android:textStyle="bold"
+                android:textColor="@color/green_dark"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On which day do you usually buy airtime?"
+                android:textSize="12sp"
+                android:textColor="@color/gray_700" />
+            <Spinner
+                android:id="@+id/sp_airtime_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/days_of_week"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Typical date for utility bill payment"
+                android:textSize="12sp"
+                android:textColor="@color/gray_700" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="20dp">
+                <SeekBar android:id="@+id/sb_bill_date" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:max="31" android:progress="5" />
+                <TextView android:id="@+id/tv_bill_date_val" android:layout_width="48dp" android:layout_height="wrap_content" android:text="5th" android:textSize="12sp" android:textColor="@color/gray_700" android:textStyle="bold" android:gravity="end" />
+            </LinearLayout>
+
+            <!-- Generate button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_generate_score"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Generate Preliminary Score"
+                android:textSize="16sp"
+                android:backgroundTint="@color/green_mid"
+                app:cornerRadius="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Verification Section -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="12dp"
+                app:strokeColor="@color/green_mid"
+                app:strokeWidth="1dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Verify Your Data"
+                        android:textStyle="bold"
+                        android:textColor="@color/green_dark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Upload documents to unlock higher loan limits. Unverified scores are limited to KSh 5,000."
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_700" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_upload_statement"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Upload M-Pesa Statement (PDF)"
+                        app:icon="@android:drawable/ic_menu_save"
+                        app:cornerRadius="8dp" />
+
+                    <TextView
+                        android:id="@+id/tv_upload_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="No document uploaded"
+                        android:textSize="11sp"
+                        android:textColor="@color/gray_500"
+                        android:fontStyle="italic" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Global Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:indeterminateTint="@color/green_mid" />
+
+</LinearLayout>
